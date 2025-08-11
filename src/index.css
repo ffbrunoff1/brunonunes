@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #ff6f91 0%, #ffc1cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-romance-gradient {
+    background: linear-gradient(135deg, #ff6f91 0%, #ffc1cc 100%);
+  }
+
+  .bg-romance-gradient-reverse {
+    background: linear-gradient(135deg, #ffc1cc 0%, #ff6f91 100%);
+  }
+}
